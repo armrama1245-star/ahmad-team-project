@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1767383218 source:c:\users\arman\desktop\arm\are\p\main.cpp
+	<iostream>
+	<thread>
+	<chrono>
+	<fstream>
+	<windows.h>
+	<conio.h>
+
