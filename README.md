@@ -26,80 +26,65 @@ In addition to programming fundamentals, the project emphasizes teamwork, struct
 - Collaboration Platform: GitHub
 
 ## Libraries Used
-The following libraries are used in this project. Each library has a specific role in the implementation of the game.
+- iostream
 
---------------------------------------------------
+  including Library:
+  ```cpp
+  #include <iostream>
+  ```
+  This library is used for standard input and output.
 
-Library: iostream
-Purpose:
-Used for standard input and output operations. It allows the program to display menus, messages, and game information, and to receive user input.
+  ---
+- thread
 
-Used code:
-#include <iostream>
-using namespace std;
+  including Library:
+  ```cpp
+  #include <thread>
+  ```
+  This library is used to create a time pause between two movements.
+  
+  ---
+- chrono
+  
+  including Library:
+  ```cpp
+  #include <chrono>
+  ```
+  This library is used for measuring time.
+  
+  ---
+- fstream
+  
+  including Library:
+  ```cpp
+  #include <fstream>
+  ```
+  This library is designed for working with files.
+  Example in the code:
+  ```cpp
+  ifstream file("abn.txt");
+  ```
+  
+  ---
+- windows.h
+  
+  including Library:
+  ```cpp
+  #include <windows.h>
+  ```
+  This library is used to control keyboard input.
+  In the windows.h library, each keyboard key has a code, and this library allows you to return the code of that key by pressing a key on the keyboard.
 
-cout << "Welcome to Angry Birds Game!" << endl;
-cin >> choice;
-
---------------------------------------------------
-
-Library: thread
-Purpose:
-Used to manage threads and introduce controlled delays during program execution to simulate pauses in gameplay.
-
-Used code:
-#include <thread>
-
-this_thread::sleep_for(std::chrono::milliseconds(500));
-
---------------------------------------------------
-
-Library: chrono
-Purpose:
-Used for time-related operations. It works together with the thread library to control delays and timing.
-
-Used code:
-#include <chrono>
-
-std::chrono::milliseconds delay(500);
-
---------------------------------------------------
-
-Library: fstream
-Purpose:
-Used for file input and output operations such as saving scores or loading game data.
-
-Used code:
-#include <fstream>
-
-ofstream file("score.txt");
-file << score;
-file.close();
-
---------------------------------------------------
-
-Library: windows.h
-Purpose:
-Used to access Windows-specific system functions such as handling delays and controlling console behavior.
-
-Used code:
-#include <windows.h>
-
-Sleep(1000);
-
---------------------------------------------------
-
-Library: conio.h
-Purpose:
-Used to handle console input without waiting for the Enter key, enabling real-time user interaction.
-
-Used code:
-#include <conio.h>
-
-getch();
-
---------------------------------------------------
-
+  ---
+- conio.h
+  
+  including Library:
+  ```cpp
+  #include <fstream>
+  ```
+  
+  
+  ---
 ## Project Type
 Academic – University Final Project (First Semester)
 
@@ -109,7 +94,3 @@ Academic – University Final Project (First Semester)
 
 ## University
 Shokat Abad University of Birjand
-
-```python
-print("hello")
-```
