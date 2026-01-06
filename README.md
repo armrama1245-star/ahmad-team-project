@@ -110,6 +110,7 @@ Academic – University Final Project (First Semester)
 ## University
 Shokat Abad University of Birjand
 
-'''cpp
-##include <iostream>
-'''
+Javascript Code:
+console.log(&quotHello, World!&quot)
+Python Code:
+print(&quotHello, World in Python!&quot)
